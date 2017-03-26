@@ -1,0 +1,15 @@
+PODS:
+  - Alamofire (4.3.0)
+  - BaiduMapKit (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.3)
+  - BaiduMapKit (~> 3.0.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  BaiduMapKit: de2a726d5296d6b2dc0e974b683af73153608dcd
+
+PODFILE CHECKSUM: cbbca209c5b23b03b5238ed9ca12311154e5984f
+
+COCOAPODS: 1.1.1

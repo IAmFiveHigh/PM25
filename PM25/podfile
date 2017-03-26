@@ -1,0 +1,6 @@
+target 'PM25' do
+platform :ios, '8.0'
+use_frameworks!
+pod 'BaiduMapKit', '~> 3.0.0'
+pod 'Alamofire', '~> 4.3'
+end
