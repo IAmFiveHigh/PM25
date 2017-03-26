@@ -27,8 +27,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         localService.startUserLocationService()
+        
+        setupUI()
 
     }
+    
+    fileprivate func setupUI() {
+        
+        
+    }
+    
     
     //MARK: - 请求数据
     fileprivate func updateData() {
@@ -40,19 +48,20 @@ class ViewController: UIViewController {
             
             if json.result.description == "SUCCESS" {
                 
-                let array = json.result.value as! [[String: String]]
                 
-                let dict = array[0]
+                let array = json.result.value as? [[String: String]]
                 
-                guard let area = dict["area"] else {
+                let dict = array?[0]
+                
+                guard let area = dict?["area"] else {
                     return
                 }
                 
-                guard let pm25 = dict["pm2_5_24h"] else {
+                guard let pm25 = dict?["pm2_5_24h"] else {
                     return
                 }
                 
-                guard let quality = dict["quality"] else {
+                guard let quality = dict?["quality"] else {
                     return
                 }
                 
