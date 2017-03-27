@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461392871E87CEA00067F982 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461392861E87CEA00067F982 /* Extension.swift */; };
+		463AC0261E88DA8100FE0C01 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AC0251E88DA8100FE0C01 /* CircleView.swift */; };
+		463AC0281E88DC6E00FE0C01 /* KeyFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463AC0271E88DC6E00FE0C01 /* KeyFrame.swift */; };
 		46E1CF1E1E8763B200C8630F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CF1D1E8763B200C8630F /* AppDelegate.swift */; };
 		46E1CF201E8763B200C8630F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E1CF1F1E8763B200C8630F /* ViewController.swift */; };
 		46E1CF231E8763B200C8630F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E1CF211E8763B200C8630F /* Main.storyboard */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		37A19185F14178F17E4BFF25 /* Pods-PM25.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PM25.release.xcconfig"; path = "Pods/Target Support Files/Pods-PM25/Pods-PM25.release.xcconfig"; sourceTree = "<group>"; };
+		461392861E87CEA00067F982 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		463AC0251E88DA8100FE0C01 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		463AC0271E88DC6E00FE0C01 /* KeyFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyFrame.swift; sourceTree = "<group>"; };
 		46E1CF1A1E8763B200C8630F /* PM25.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PM25.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E1CF1D1E8763B200C8630F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E1CF1F1E8763B200C8630F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,9 +47,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463AC0241E88DA8100FE0C01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				463AC0271E88DC6E00FE0C01 /* KeyFrame.swift */,
+				463AC0251E88DA8100FE0C01 /* CircleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		46E1CF111E8763B200C8630F = {
 			isa = PBXGroup;
 			children = (
+				463AC0241E88DA8100FE0C01 /* View */,
 				46E1CF2F1E87644600C8630F /* Tool */,
 				46E1CF1C1E8763B200C8630F /* PM25 */,
 				46E1CF1B1E8763B200C8630F /* Products */,
@@ -76,6 +92,7 @@
 		46E1CF2F1E87644600C8630F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				461392861E87CEA00067F982 /* Extension.swift */,
 				46E1CF301E87644600C8630F /* bridge.h */,
 			);
 			path = Tool;
@@ -222,8 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463AC0261E88DA8100FE0C01 /* CircleView.swift in Sources */,
+				461392871E87CEA00067F982 /* Extension.swift in Sources */,
 				46E1CF201E8763B200C8630F /* ViewController.swift in Sources */,
 				46E1CF1E1E8763B200C8630F /* AppDelegate.swift in Sources */,
+				463AC0281E88DC6E00FE0C01 /* KeyFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
