@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        localService.startUserLocationService()
+        localService.startUserLocationService()
         
         setupUI()
 
@@ -108,8 +108,6 @@ class ViewController: UIViewController {
     //MARK: - 更新UI
     fileprivate func updateUI() {
         
-        model = Model(area: "上海", pm25: 20, quality: "优")
-        
         areaLabel.text = model.area
         
         pm25Index.text = "\(model.pm2_5_24h)"
@@ -160,7 +158,7 @@ class ViewController: UIViewController {
                     
                     self.model = Model(area: area as! String, pm25: pm25 as! Int, quality: quality as! String)
                     
-//                    self.updateUI()
+                    self.updateUI()
                 }else {
                     
                     print(json.result.value ?? "sorry")
