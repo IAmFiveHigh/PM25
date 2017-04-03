@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         qualityLabel.text = ""
         qualityLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         qualityLabel.textAlignment = .center
-        qualityLabel.font = UIFont.systemFont(ofSize: 18)
+        qualityLabel.font = UIFont.systemFont(ofSize: 16)
         qualityLabel.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         view.addSubview(qualityLabel)
         
