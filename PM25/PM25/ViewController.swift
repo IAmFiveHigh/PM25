@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         pm25Index.font = UIFont.systemFont(ofSize: 30)
         view.addSubview(pm25Index)
         
-        qualityLabel.frame = CGRect(x: 0, y: 0, width: 60, height: 40)
+        qualityLabel.frame = CGRect(x: 0, y: 0, width: 80, height: 40)
         qualityLabel.setCenterX(view.centerX())
         qualityLabel.setCenterY(view.centerY() + 80)
         qualityLabel.layer.cornerRadius = 10
